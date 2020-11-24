@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>skyFight</title>
+</head>
+<body id="body">
+    <div id="intro">
+        <h1>SkyFight: Aerial  </h1>
+        <h2 id="instructions1">Good morning Aviator <br>
+            At your 2:47 sharp, five planes have been located 50 miles from your position. <br>
+            Save the day and Knock their fleet out of the sky. <br>
+            Whoever destroys the entire enemy's fleet, WINS THE GAME! <br>
+            Go Fly like a Bird </h2>
+        <h3 id="instructions2" class="hidden">1. Place your planes <br>2."Commence Operation" <br> 3. Target the enemy field <br> 4. Fire at Will, The ENEMY will fire back</h3>
+        <h2 id="end"></h2>
+        <button id="start">Start</button>
+    </div>
+    <main id="main" class="hidden">
+        <div id="playerside">
+            <h3 id="player">YOUR FLEET</h3>
+            <section id="playerboard">
+               </section>
+        </div>
+        <div id="planes">
+            <h3>Place your planes:</h3>
+            <button id="carrier">Carrier</button>
+            <button id="fighterjet">fighterjet</button>
+            <button id="stealthfighter">Stealthfighter</button>
+            <button id="airfighter">Airfighter</button>
+            <button id="patrol">Patrol</button>
+            <button id="rotate">Rotate</button>
+            <button id="fire">Commence Operation</button>
+        </div>
+        <div id="enemyside">   
+            <h3 id="enemy">ENEMY FLEET</h3>
+            <section id="computerboard">
+            </section>
+        </div>
+        <div class="cloudcontainer">
+            <div class="circle"> 
+                <div class="bar"></div>
+            </div>
+            <div class="circle">
+                <div class="bar"></div>
+                 </div>
+            <div class="circle">
+                <div class="bar"></div>
+             </div>
+               <div class="base"></div>
+            </div>
+            <!--  CLOUD END -->
+
+    </main>
+    
+    <footer id="footer" class="hidden">
+        <button id="reset">Reset</button>
+    </footer>
+    
+    <audio id="hitsound" src="audio/hit.mp3"></audio>
+    <audio id="misssound" src="audio/miss.mp3"></audio>
+    <audio id="backgroundsound" src="audio/background.mp3"></audio>
+    <script src="js/script.js"></script>
+</body>
+</html>

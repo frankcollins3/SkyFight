@@ -1,0 +1,284 @@
+/* Style the background 
+Add images for planes
+Explosion
+Splash
+Sound Effects
+*/
+
+body {
+    background-image: url("https://static.wikia.nocookie.net/intothelongdark/images/5/5a/Jackrabbit_hanger.jpg/revision/latest/top-crop/width/360/height/450?cb=20181231202520");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Open Sans';  
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#intro {
+    text-shadow: 3px 5px 2px rgb(66, 99, 209);
+}
+
+
+#playerside {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+#enemyside {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+/* 
+#player {
+    position: absolute; 
+    top: 275px;
+    left: 50px;
+    right: 880px; 
+    bottom: 300px;
+    height: 30px;
+}
+
+#enemy {
+    position: absolute; 
+    top: 275px;
+    left: 880px;
+    right: 50px; 
+    bottom: 300px;
+    height: 30px;
+} */
+
+.position2 {
+    transform: translateY(20px);
+}
+
+a {
+    color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    top: 20px;
+    right: 20px;
+    left: 0;
+    text-shadow: 1px 1px 1px #333333;
+}
+
+h1 {
+    margin: 100px auto 0px auto;
+    color: white; 
+    text-align: center;
+}
+
+h2 {
+    margin: 20px auto 0px auto;
+    color:  rgb(245,245,245); 
+    text-align: center;
+}
+
+h3 {
+    margin: 20px auto 0px auto;
+    color:  rgb(245,245,245); 
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+
+}
+
+section {
+    border: 3px solid black;
+}
+
+#reset { 
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 580px;
+    top: -125px;
+}
+
+#planes {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    
+    
+    /* display: inline-block; */
+    width: 125px;
+    /* margin: 0 auto;
+    text-align: center; */
+}
+
+#rotate {
+    width: 75px; 
+}
+
+button {
+    background-image: url("https://cdn.lowgif.com/full/cc9c357970463cd6-clouds-loop-gifs-find-make-share-gfycat-gifs.gif");
+    font-family: 'Open Sans';
+    color: #333333;
+    height: 30px;
+    margin-top: 7px; 
+    width: 100px; 
+    text-align: center;
+    font-size: 14px; 
+}
+
+button:hover {
+    background-color: rgba(215, 180, 115, .6);
+    box-shadow: 3px 5px 2px rgb(160, 6, 147);
+}
+
+
+#start {
+    position: absolute; 
+    top: 300px;
+    left: 100px;
+    right: 100px; 
+    bottom: 250px;
+    height: 30px;
+    margin-top: 30px;
+    width: 100px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#fire {
+    height: 45px;
+    margin-top: 30px;
+}
+
+#playerboard {
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+    display: grid; 
+    /* grid-gap: 10px; */
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    background-image: url("https://cdn.lowgif.com/full/cc9c357970463cd6-clouds-loop-gifs-find-make-share-gfycat-gifs.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* float: left; */
+    
+
+}
+
+#computerboard {
+    height: 500px;
+    width: 500px;
+    margin: 50px;
+    display: grid; 
+    /* grid-gap: 10px; */
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    background-image: url("https://media4.giphy.com/media/FizSVay8SBrEI/giphy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* float: right; */
+
+}
+
+.square { 
+    border: 1px solid rgba(200, 200, 200, 0.4); 
+}
+
+.square:hover {
+    background-color: rgba(250, 250, 250, .5);
+    /* include target  */
+}
+
+.miss {
+    background-color: rgba(255,255,255,.95);
+}
+
+.hit {
+    background-color: rgb(202, 13, 13);
+}
+
+.sunk{
+    background-color: rgb(14, 1, 1);
+}
+
+.plane {
+    background-color: rgba(250, 250, 250, .5);
+}
+
+.placed {
+    background-color: rgba(167, 169, 171, .85);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.cloudcontainer {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: -650px;
+    transform: translate(-50%, 50%);
+    transform: scale(0.5);
+}
+.cloudcontainer .circle {
+    background-color: #3299D8;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    overflow: hidden; 
+    z-index: -2;
+
+}
+.cloudcontainer .circle:nth-child(2) {
+width: 150px;
+height: 150px;
+top: 20px;
+left: -90px;
+overflow: hidden;
+}
+.cloudcontainer .circle:nth-child(3) {
+    width: 120px;
+    height: 120px;
+    top: 30px;
+    left: 100px;
+    overflow: hidden;  
+}
+.base {
+   width: 100%;
+   height: 20px;
+   background: #eee;
+   position: absolute;
+   top: 80px;
+   left: 4px;
+}
+.bar {
+    width: 200px;
+    height: 200px;
+    background: white; 
+    position: absolute;
+    transform: translateY(130px);
+    animation: loading 3s infinite; 
+}
+@keyframes loading {
+    to {
+        transform: translateY(0);
+    }
+} 
