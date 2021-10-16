@@ -101,18 +101,7 @@ footer {
     flex-flow: row wrap
 }
 
-#reset { 
-    /* margin-top: 0;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    right: 0; */
-    /* left: 580px;
-    top: -125px; */
-}
+
 
 #planes {
     display: flex; 
@@ -126,9 +115,9 @@ footer {
     text-align: center; */
 }
 
-#rotate {
+/* #rotate {
     width: 75px; 
-}
+} */
 
 button {
     background-image: url("https://cdn.lowgif.com/full/cc9c357970463cd6-clouds-loop-gifs-find-make-share-gfycat-gifs.gif");
