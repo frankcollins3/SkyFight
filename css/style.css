@@ -96,17 +96,22 @@ section {
     border: 3px solid black;
 }
 
+footer {
+    display: flex;
+    flex-flow: row wrap
+}
+
 #reset { 
-    margin-top: 0;
+    /* margin-top: 0;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     position: relative;
     bottom: 0;
-    right: 0;
-    left: 580px;
-    top: -125px;
+    right: 0; */
+    /* left: 580px;
+    top: -125px; */
 }
 
 #planes {

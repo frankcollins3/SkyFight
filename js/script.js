@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function playBackgroundSound() {
         backgroundSound.pause();
         backgroundSound.currentTime = 0;
-        backgroundSound.play();
+        backgroundSound.play().loop = true;
         console.log("loadedBackgroundSound");
     }
 
