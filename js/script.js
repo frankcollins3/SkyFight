@@ -78,7 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let main = document.getElementById("main");
     let footer = document.getElementById("footer");
     
-
+    body.style.backgroundImage = "url('photos/hanger.jpeg')";
+    body.style.backgroundSize = "cover";
+    body.style.backgroundRepeat = "no-repeat";
     
     
     function playHitSound() {
